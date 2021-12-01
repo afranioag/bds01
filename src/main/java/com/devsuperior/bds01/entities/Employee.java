@@ -14,9 +14,9 @@ public class Employee {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	public Long id;
-	public String name;
-	public String email;
+	private Long id;
+	private String name;
+	private String email;
 	
 	@ManyToOne
 	@JoinColumn(name = "department_id")
